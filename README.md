@@ -1,0 +1,43 @@
+# Brevo Newsletter Template — einseitensprung.at
+
+E-Mail-Newsletter-Vorlage für Brevo-Kampagnen von [einseitensprung.at](https://einseitensprung.at), im visuellen Theme der bestehenden Newsletter-Ausgaben (siehe [Archiv](https://einseitensprung.at/newsletter/)).
+
+## Inhalt
+
+- `newsletter-template.html` — fertiges, bulletproof E-Mail-HTML zum Import in Brevo (Kampagne → Code-Editor importieren)
+
+## Design-Tokens
+
+| Element | Wert |
+|---|---|
+| Text / Überschriften | `#1F2D3D` (Navy) |
+| Marken-Streifen | `#B5E479` (Grün) · `#F5A9D0` (Pink) · `#6FE3E8` (Cyan) |
+| CTA-Button | `#8E1963` (Magenta) |
+| Footer-Fläche | `#EFF2F7` |
+| Schrift | [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans) (Fallback: Arial/Helvetica) |
+| Badges / Footer-Links | Courier New (Monospace, terminal-artiger Look wie auf der Archivseite) |
+
+## Aufbau der Vorlage
+
+1. Mirror-/Browser-Link (`{{ mirror }}`)
+2. Marken-Streifen + Logo-Wortmarke
+3. Ausgaben-Badge (z. B. `NEWSLETTER #013`)
+4. Begrüßung mit Personalisierung (`{{ contact.FIRSTNAME }}`)
+5. Beliebig viele Themenblöcke (Bild, Überschrift, Text, CTA-Button)
+6. Signatur
+7. Footer mit Adresse, Social-Links und Pflicht-Abmeldelink (`{{ unsubscribe }}`)
+
+## Verwendung in Brevo
+
+1. Kampagne anlegen → **Code-Editor importieren** → `newsletter-template.html` hochladen
+2. Platzhalterbild(er) durch echte, in Brevo hochgeladene Bilder ersetzen
+3. Themenblöcke duplizieren/löschen und mit Inhalt befüllen
+4. Social-Link-Platzhalter (`href="#"`) auf echte Profil-URLs setzen
+5. Testmail verschicken und in mehreren Clients (Outlook, Gmail, Apple Mail) prüfen
+
+## Merge-Tags
+
+- `{{ contact.FIRSTNAME }}` — Vorname des Empfängers
+- `{{ contact.EMAIL }}` — E-Mail-Adresse des Empfängers
+- `{{ mirror }}` — Link „Im Browser ansehen"
+- `{{ unsubscribe }}` — Pflicht-Abmeldelink
