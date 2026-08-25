@@ -2,6 +2,8 @@
 
 E-Mail-Newsletter-Vorlage für Brevo-Kampagnen von [einseitensprung.at](https://einseitensprung.at), im visuellen Theme der bestehenden Newsletter-Ausgaben (siehe [Archiv](https://einseitensprung.at/newsletter/)).
 
+🔗 [Web-Preview der Vorlage](https://claude.ai/code/artifact/d669b284-36f9-47c8-b5f1-d36b43b8dad3)
+
 ## Inhalt
 
 - `newsletter-template.html` — fertiges, bulletproof E-Mail-HTML zum Import in Brevo (Kampagne → Code-Editor importieren)
@@ -32,8 +34,7 @@ E-Mail-Newsletter-Vorlage für Brevo-Kampagnen von [einseitensprung.at](https://
 1. Kampagne anlegen → **Code-Editor importieren** → `newsletter-template.html` hochladen
 2. Platzhalterbild(er) durch echte, in Brevo hochgeladene Bilder ersetzen
 3. Themenblöcke duplizieren/löschen und mit Inhalt befüllen
-4. Social-Link-Platzhalter (`href="#"`) auf echte Profil-URLs setzen
-5. Testmail verschicken und in mehreren Clients (Outlook, Gmail, Apple Mail) prüfen
+4. Testmail verschicken und in mehreren Clients (Outlook, Gmail, Apple Mail) prüfen
 
 ## Merge-Tags
 
