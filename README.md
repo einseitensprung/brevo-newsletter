@@ -2,7 +2,7 @@
 
 E-Mail-Newsletter-Vorlage für Brevo-Kampagnen von [einseitensprung.at](https://einseitensprung.at), im visuellen Theme der bestehenden Newsletter-Ausgaben (siehe [Archiv](https://einseitensprung.at/newsletter/)).
 
-🔗 [Web-Preview der Vorlage](https://claude.ai/code/artifact/d669b284-36f9-47c8-b5f1-d36b43b8dad3)
+🔗 [Web-Preview der Vorlage (GitHub Pages)](https://einseitensprung.github.io/brevo-newsletter/newsletter-template.html)
 
 ## Inhalt
 
