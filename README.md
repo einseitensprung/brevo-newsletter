@@ -7,7 +7,7 @@ E-Mail-Newsletter-Vorlage für Brevo-Kampagnen von [einseitensprung.at](https://
 ## Inhalt
 
 - `newsletter-template.html` — fertiges, bulletproof E-Mail-HTML zum Import in Brevo (Kampagne → Code-Editor importieren)
-- `assets/demo-image-1.svg` — funktionierendes Demo-/Platzhalterbild im Brand-Look (der alte `via.placeholder.com`-Link ist offline), gehostet über GitHub Pages
+- `assets/demo-image-1.svg` — Quelldatei des Demo-/Platzhalterbilds im Brand-Look (der alte `via.placeholder.com`-Link ist offline); im Template direkt als Base64-Data-URI eingebettet, damit es überall ohne externen Bild-Request angezeigt wird
 
 ## Design-Tokens
 
@@ -33,7 +33,7 @@ E-Mail-Newsletter-Vorlage für Brevo-Kampagnen von [einseitensprung.at](https://
 ## Verwendung in Brevo
 
 1. Kampagne anlegen → **Code-Editor importieren** → `newsletter-template.html` hochladen
-2. Platzhalterbild(er) durch echte, in Brevo hochgeladene Bilder ersetzen (Demo-SVG dient nur der Vorschau — SVG wird nicht von allen E-Mail-Clients unterstützt, für den Versand PNG/JPG verwenden)
+2. Platzhalterbild(er) durch echte, in Brevo hochgeladene Bilder ersetzen (das eingebettete Demo-Bild dient nur der Vorschau — Data-URI-Bilder werden von Outlook/Gmail beim tatsächlichen Versand oft nicht angezeigt, für den Versand echte PNG/JPG-URLs verwenden)
 3. Themenblöcke duplizieren/löschen und mit Inhalt befüllen
 4. Testmail verschicken und in mehreren Clients (Outlook, Gmail, Apple Mail) prüfen
 
